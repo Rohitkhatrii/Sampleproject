@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
             Debug.Log("Score Added Positive. Current Score: " + score);
             
             collision.gameObject.SetActive(false); 
-            SquareSpawner.Instance.SquareDeactivated(); // Notify Spawner
+            SquareSpawner.Instance.SquareDeactivated(); 
         }
         else if (collision.CompareTag("NegativeSquare"))
         {
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             Debug.Log("Score Added Negative. Current Score: " + score);
             
             collision.gameObject.SetActive(false); 
-            SquareSpawner.Instance.SquareDeactivated(); // Notify Spawner
+            SquareSpawner.Instance.SquareDeactivated(); 
         }
     }
 
